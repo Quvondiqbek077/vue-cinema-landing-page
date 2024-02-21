@@ -542,8 +542,18 @@ body {
     background: linear-gradient(96deg, rgba(35, 35, 35, 0.80) 0%, rgba(11, 11, 11, 0.60) 100%);
     border-radius: 6px;
 }
+.series-content:hover::before{
+    transform: translateY(-110%);
+}
+.series-content:hover::after{
+    transform: translateY(110%);
+}
+.series-content:hover .series-link{
+    transform: scale(1.4);
+}
 .series-link {
     color: var(--secondary-white);
+    transition: .5s;
 }
 
 .series-md__title {
